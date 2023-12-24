@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,7 @@ public class ScientificCalculator implements Calculator {
         return eq.getResult();
     }
         
-    public List<String> getHistory(int length) { 
+    public void getHistory(int length) { 
         List<String> result = new ArrayList<>(length);
         int endIndex = history.size() - length - 1;
         if (endIndex < 0) {
@@ -25,7 +27,7 @@ public class ScientificCalculator implements Calculator {
         for (int i = history.size()-2; i > endIndex; i--) {
             result.add("\n"+history.get(i).toString());
         }
-        return result;
+        System.out.println(result);
     }
 
 

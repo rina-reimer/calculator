@@ -1,3 +1,4 @@
+package src;
 //import java.util.Scanner;
 
 
@@ -12,6 +13,7 @@ public abstract class BaseTest {
 
         System.out.println("SUBTRACTION TEST:");
         main.calculate(3, 2, "subtract");
+        main.getHistory(1);
 
         System.out.println("MULTIPLICATION TEST:");
         main.calculate(3, 2, "multiply");
@@ -29,12 +31,12 @@ public abstract class BaseTest {
         main.calculate(45, 1, "trig");
 
         System.out.println("ABSOLUTE VALUE TEST:");
-        main.calculate(3, 0, "absolute value");
+        main.calculate(-3, 0, "absolute value");
 
         System.out.println("FACTORIAL TEST:");
-        main.calculate(3.4, 0, "factorial");
+        main.calculate(3, 0, "factorial");
 
         System.out.println("HISTORY:");
-        System.out.println(main.getHistory(5));
+        main.getHistory(5);
     }
 }

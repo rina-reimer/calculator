@@ -1,8 +1,8 @@
-import java.util.List;
+package src;
 
 public interface Calculator {
 
     Double calculate(double num1, double num2, String type);
 
-    List<String> getHistory(int farBack);
+    void getHistory(int farBack);
 }
