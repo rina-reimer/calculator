@@ -1,9 +1,4 @@
-package src;
-//import java.util.Scanner;
-
-
-public abstract class BaseTest {
-
+public class BaseTest {
     public static void main(String[] args) {
         ScientificCalculator main = new ScientificCalculator();
         System.out.println("Hello! Welcome to my calculator");
