@@ -1,7 +1,3 @@
-package src;
-//import java.util.Scanner;
-
-
 public abstract class BaseTest {
 
     public static void main(String[] args) {
